@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Travel Guide</title>
+        <link href="home.css" rel="stylesheet">
+        <script>
+            function validate()
+            {
+                if(document.myForm.email.value="")
+                {
+                    alert("Enter valid email");
+                    document.myForm.email.focus();
+                    return false;
+                }
+                if(document.myForm.contact.value="")
+                {
+                    alert("Enter valid contact");
+                    document.myForm.contact.focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body class="body">
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src="C:\Users\Dell\OneDrive\Desktop\WT\travel.png">
+                </div>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+            <h2>Login Here</h2>
+            <form name="regform">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email " id="email" value="">
+            <br>
+            <label for="contact">Contact</label>
+            <input type="text" name="contact" value="">
+            <button type="button" onclick="validate()">
+                <a href="home.html"></a>Submit</button>
+            </form>
+            </body>
+            </html>
